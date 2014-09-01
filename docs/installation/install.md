@@ -22,3 +22,5 @@
 
 1. 在Windows Server桌面上找到`SharePoint 管理中心`图标并点击：![SharePoint 管理中心](imgs/installation.2.png)
 2. 管理中心将在浏览器中打开，点击左边菜单栏中的**系统设置**，进入系统设置后点击**管理场解决方案**：![管理场解决方案](imgs/installation.3.png)
+
+### 激活
