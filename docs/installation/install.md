@@ -14,17 +14,19 @@ cmd命令窗口显示如下：
 
 如果您是第一次在当前SharePoint环境安装`AWorkflow 2013`,脚本将执行以下过程：
 
-1. 添加解决方案包。
-2. 部署解决方案包。
+1. 添加解决方案包
+2. 部署解决方案包
 	>*存在WebApplication的情况下才会部署解决方案包。*
 
 如果当前的SharePoint 环境已经安装过`AWorkflow 2013`,则脚本将执行以下过程：
 
-1. 卸载解决方案包。
+1. 卸载解决方案包
+
 	>*存在WebApplication的情况下才会卸载解决方案包。*
-2. 删除解决方案包。
+2. 删除解决方案包
 3. 添加解决方案包
-4. 部署解决方案包。
+4. 部署解决方案包
+
 	>*存在WebApplication的情况下才会部署解决方案包。*
 
 ### 确认解决方案包安装完成
@@ -57,7 +59,7 @@ cmd命令窗口显示如下：
 
 **<font style='color:red;'>如果您是在安装完`AWorkflow 2013`解决方案包之后创建的WebApplication，请跳过此步骤！</font>**
 
-以下内容是在您先创建WebApplication，再安装`AWorkflow 2013`解决方案包的情况下执行：
+以下内容是在您先创建WebApplication，再安装`AWorkflow 2013`解决方案包的情况下执行。
 
 打开SharePoint Powershell控制台，输入下面的命令，回车执行：
 
