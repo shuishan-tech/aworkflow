@@ -3,9 +3,11 @@
 
 ### 执行cmd命令
 在`AWorkflow 2013`解决方案安装包中，找到名为`Install.cmd`的cmd命令文件，右键执行`以管理员身份运行`，如下图：
+
 ![执行cmd命令](imgs/installation.1.png)
 
 cmd命令窗口显示如下：
+
 ![cmd命令窗口](imgs/installation.4.png)
 >注意：cmd命令窗口中输出的提示信息会根据当前SharePoint环境不同而不同，比如上图中的提示信息，表示该环境从未安装过`AWorkflow 2013`。
 
@@ -27,14 +29,19 @@ cmd命令窗口显示如下：
 ### 确认解决方案包安装完成
 当上一步的cmd命令执行完成后，您需要去`SharePoint 管理中心`确认解决方案包是否安装正确。
 
-1. 在Windows Server桌面上找到`SharePoint 管理中心`图标并点击：![SharePoint 管理中心](imgs/installation.2.png)
-2. 管理中心将在浏览器中打开，点击左边菜单栏中的**系统设置**，进入系统设置后点击**管理场解决方案**：![管理场解决方案](imgs/installation.3.png)
+1. 在Windows Server桌面上找到`SharePoint 管理中心`图标并点击：
+
+![SharePoint 管理中心](imgs/installation.2.png)
+2. 管理中心将在浏览器中打开，点击左边菜单栏中的**系统设置**，进入系统设置后点击**管理场解决方案**：
+
+![管理场解决方案](imgs/installation.3.png)
 3. 确认在场解决方案中出现以下五个解决方案包：
-	* shuishan.s2.form.wsp 
-	* shuishan.s2.framework.wsp 
-	* shuishan.s2.mobile.wsp 
-	* shuishan.s2.organizationchart.wsp 
-	* shuishan.s2.workflow.wsp 
+	* shuishan.s2.form.wsp
+	* shuishan.s2.framework.wsp
+	* shuishan.s2.mobile.wsp
+	* shuishan.s2.organizationchart.wsp
+	* shuishan.s2.workflow.wsp
+
 	![解决方案包](imgs/installation.5.png)
 	>注意：解决方案包会因SharePoint环境不同而显示不同状态，上图安装`AWorkflow 2013`的环境没有创建过**WebApplication**，所以所有解决方案包显示未部署状态。如果SharePoint环境存在**WebApplication**，`shuishan.s2.form.wsp` 解决方案包会以 **WebApplication** 部署，其余4个解决方案包的状态则是全局部署。
 
@@ -49,43 +56,6 @@ cmd命令窗口显示如下：
 
 ```powershell
 Install-SPApplicationContent
-``` 
+```
+
 ![Install-SPApplicationContent](imgs/installation.6.png)
-
-### 激活网站功能
->此步骤目的是确保`AWorkflow 2013`的所有功能在网站上部署成功。
-
-1. 打开需要安装`AWorkflow 2013`的SharePoint网站，打开网站设置页面：
-![SiteSettings](imgs/installation.7.png)
-2. 点击**管理网站功能**链接，进入网站功能管理页面：
-![SiteSettings](imgs/installation.8.png)
-3. 确保以下功能全部处于激活状态：
-	* 水杉S2表单功能
-	* 水杉S2工作流列表定义
-	* 水杉S2工作流配置功能
-	* 水杉S2工作流任务处理功能
-	* 水杉S2工作流事件功能
-	* 水杉S2框架基本功能
-	* 水杉S2移动基本配置
-	* 水杉S2组织结构
-![Features](imgs/installation.9.png)
-
-### 激活AWorkflow
-> 此步骤目的是为了激活`AWorkflow 2013`产品，确保您拥有`AWorkflow 2013`产品的合法使用权利。
-
-1. 打开已经安装`AWorkflow 2013`的SharePoint网站，打开**网站设置**页面：
-![SiteSettings](imgs/installation.7.png)
-2. 在**网站设置**页面下半部分，有一个`水杉工作流平台 2013 `的分组，点击此分组中的**关于水杉工作流平台 **链接：
-![AboutShuiShan](imgs/installation.10.png)
-3. 在**关于水杉工作流平台 **的页面上可以查看以下信息：
-	* AWorkflow 2013平台组件的版本号。
-	* AWorkflow 2013平台状态，是否已经激活。
-4. 在线激活，需要服务器有访问互联网的权限，如果您是评估产品或者想使用开发者版本，则使用产品序列号**<font style="color:red">S2000-AW000-DEV00-00001</font>**，如果您是专业版用户，则输入水杉公司提供的专有产品序列号，点击在线激活按钮：
-![License](imgs/installation.11.png)
-正常情况下，激活成功会有以下提示，状态改变为已激活：
-![LicenseSuccess](imgs/installation.12.png)
-
-5. 离线激活，如果服务器不能访问互联网，则可以使用离线激活。和在线激活一样，需要输入正确的产品序列号，然后点击**生成激活码**，发送生成的激活码到[aworkflow@shuishan-tech.com](mailto:aworkflow@shuishan-tech.com)，一个工作日内我们会回复邮件提供产品许可证。
-![OfflineLicense](imgs/installation.13.png)
-
-到这里，`AWorkflow 2013`就在您的SharePoint网站上正式启用，你可以管理工作流，管理组织结构，创建表单等，具体的操作手册以下一一呈现。

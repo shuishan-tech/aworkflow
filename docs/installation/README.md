@@ -3,5 +3,5 @@
 
 包含以下章节内容：
 1. [安装前准备](requires.md)
-2. [安装](installation.md)
+2. [安装](install.md)
 3. [激活](activation.md)
