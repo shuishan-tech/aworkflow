@@ -1,0 +1,425 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>ShuiShanOrgChartHelp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Microsoft YaHei, Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 4px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+</style>
+
+</head>
+<body>
+<p><strong><font size=6px><a name="Top"></a>水杉组织结构操作使用说明</font></strong></p>
+<ul>
+<li><a href="#C1">角色定义</a> </li>
+<li><a href="#C2">组织结构定义</a></li>
+<li><a href="#C3">用户设定</a></li>
+</ul>
+<hr />
+<p>用户可以利用水杉工作流平台的组织结构管理功能进行企业组织结构的设置，以便用于工作流定义过程中。组织结构定义包含以下几部分的工作：</p>
+<ul>
+<li>
+<p>部门结构定义 – 以树状结构定义企业的部门结构，并在部门上设置角色信息；</p>
+</li>
+<li>
+<p>用户列表定义 – 定义工作流系统中使用的用户相关信息；</p>
+</li>
+<li>
+<p>角色定义 – 定义工作流系统中能够使用的角色相关信息。</p>
+</li>
+</ul>
+<h1><a name="C1"></a>角色定义</h1>
+<p align=right><a href="#Top">Top</a></p>
+<p>从网站设置页面点击“水杉工作流平台2013/角色”链接，进入“角色”管理页面。在角色管理页面中可根据实际流程需要建立角色名称列表。</p>
+<p><center><img src="images/SSOrgChart1.png" alt="角色列表" title="角色列表"></center></p>
+<p><strong>创建和编辑角色</strong></p>
+<p>点击<code>新建</code>按钮，或选择角色后点击<code>编辑</code>按钮，可以开始创建或编辑角色，如下图所示：</p>
+<p><center><img src="images/SSOrgChart2.png" alt="新建/编辑角色" title="新建/编辑角色"></center></p>
+<p><strong>删除角色</strong></p>
+<p>在角色列表中选择需要删除的角色后，点击<code>删除</code>按钮。<em><font color=red>已经分配了成员用户的角色不可以被删除。</font></em></p>
+<p><center><img src="images/SSOrgChart3.png" alt="删除角色" title="删除角色"></center></p>
+<p><strong>成员管理</strong></p>
+<p>角色可以关联公司或部门以及成员用户，例如：“部门经理”角色可以关联不同部门，并在每个部门上关联不同部门的部门经理成员用户，从而构成“公司/部门-角色-用户”关系。</p>
+<p>在角色列表中选择角色，并点击<code>成员管理</code>按钮，在弹出窗口中列出当前组织结构已经定义的“公司/部门-角色-用户”关系列表。</p>
+<p><center><img src="images/SSOrgChart4.png" alt="角色组织管理" title="角色组织管理"></center></p>
+<p>点击<code>新建</code>按钮，可以创建一个新的“公司/部门-角色-用户”关系。首先从现有组织结构中选择一个公司或部门，然后点击<code>添加成员</code>按钮向这个关系中添加成员用户。编辑完成后点击<code>确认</code>按钮保存新建的“公司/部门-角色-用户”关系。</p>
+<p><center><img src="images/SSOrgChart5.png" alt="新建角色组织关系" title="新建角色组织关系"></center></p>
+<p>点击<code>编辑</code>或<code>删除</code>按钮，可以编辑或删除已存在的“公司/部门-角色-用户”关系。</p>
+<h1><a name="C2"></a>组织结构定义</h1>
+<p align=right><a href="#Top">Top</a></p>
+<p>从网站设置页面点击“水杉工作流平台2013/组织结构”链接，进入“组织结构”管理页面。在组织结构管理页面中，可以建立“公司\子公司\部门\子部门”的层级状组织结构。</p>
+<p><center><img src="images/SSOrgChart6.png" alt="新建角色组织关系" title="新建角色组织关系"></center></p>
+<p><strong>创建公司和子公司</strong></p>
+<p>点击『新建』按钮，选择“新建同级公司”，则可在当前光标选择的组织结构层级上创建同级别的公司。如果是点击在根目录所在的公司上，则同样创建一个根目录级别公司（无上级公司）。</p>
+<p><center><img src="images/SSOrgChart7.png" alt="新建公司" title="新建公司"></center></p>
+<p>选择组织结构中的公司，点击『新建』按钮并选择“新建子公司”，则可开始创建当前所选择公司的子公司。</p>
+<p><center><img src="images/SSOrgChart8.png" alt="新建子公司" title="新建子公司"></center></p>
+<p><strong>创建部门和子部门</strong></p>
+<p>部门只能在公司下创建。在组织结构中选择公司，点击<code>新建</code>按钮并选择<code>新建同级部门</code>，则可开始创建所选择公司下属部门；在组织结构中选择部门，点击<code>新建</code>按钮并选择<code>新建同级部门</code>，则可开始创建所选择部门的同级部门；在<code>新建</code>按钮中选择<code>创建子部门</code>，则可创建当前选择的公司或部门的下级部门。</p>
+<p><center><img src="images/SSOrgChart9.png" alt="新建部门和子部门" title="新建部门和子部门"></center></p>
+<p><strong>删除公司或部门</strong></p>
+<p>在组织结构中选择公司或部门，并点击<code>删除</code>按钮，系统将提示用户是否确认要删除所选择的公司，并可勾选“是否删除所有下级组织结构？”。</p>
+<p>如果用户不勾选“是否删除所有下级组织结构？”选项，并确认删除，则将删除选中的公司或部门，并将被删除的公司或部门的下级组织结构上移到被删除的位置。</p>
+<p>如果用户勾选“是否删除所有下级组织结构？”选项，并确认删除，则将删除选中的公司或部门，以及其下属的所有公司或部门。</p>
+<p><center><img src="images/SSOrgChart10.png" alt="删除公司或部门" title="删除公司或部门"></center></p>
+<p><strong>“公司/部门-角色-用户”关系定义</strong></p>
+<p>在组织结构中选择公司或部门，并点击<code>角色</code>按钮，可以开始定义该公司或部门节点上的“公司/部门-角色-用户”关系。在弹出窗口中列出当前选择的公司或部门节点上已经定义的角色和用户。</p>
+<p><center><img src="images/SSOrgChart11.png" alt="部门角色用户关系定义" title="部门角色用户关系定义"></center></p>
+<p>点击<code>新建</code>按钮创建新的“公司/部门-角色-用户”关系。从角色名称列表中选择角色名称或点击<code>添加角色</code>按钮添加一个新的角色名称，然后点击<code>添加成员</code>按钮添加成员用户。编辑完成后点击<code>确认</code>按钮保存新建的“公司/部门-角色-用户”关系。</p>
+<p><center><img src="images/SSOrgChart12.png" alt="新建部门角色用户关系" title="新建部门角色用户关系"></center></p>
+<p>点击<code>编辑</code>或<code>删除</code>按钮，可以编辑或删除已经存在的“公司/部门-角色-用户”关系。</p>
+<p><strong>“部门-用户”关系定义</strong></p>
+<p>在组织结构中选择部门节点，并点击<code>用户</code>按钮，可以开始定义该公司或部门节点上的“部门-用户”关系。在弹出窗口中列出当前选择的部门节点上已经定义的用户列表。</p>
+<p><center><img src="images/SSOrgChart13.png" alt="新建部门角色用户关系" title="新建部门角色用户关系"></center></p>
+<p>点击<code>添加</code>按钮可以在当前选择的部门节点上添加成员用户。点击<code>删除</code>按钮可以将选中的成员用户从当前部门移除。</p>
+<h1><a name="C3"></a>用户信息设定</h1>
+<p align=right><a href="#Top">Top</a></p>
+<p>从网站设置页面点击“水杉工作流平台2013/用户”链接，进入“水杉工作流平台用户管理”页面，如下图：</p>
+<p><center><img src="images/SSOrgChart14.png" alt="用户列表" title="用户列表"></center></p>
+<p><strong>新建/编辑用户</strong></p>
+<p>在用户列表页面中点击<code>新建</code>按钮，可以开始新建用户；在用户列表中选择用户，并点击<code>编辑</code>按钮，可以开始编辑用户信息。</p>
+<p><center><img src="images/SSOrgChart15.png" alt="新建用户" title="新建用户"></center></p>
+<p>用户信息包含下列属性：</p>
+<ul>
+<li>
+<p>姓名 – 文本输入，255字符；</p>
+</li>
+<li>
+<p>员工编号 – 文本输入，255字符；</p>
+</li>
+<li>
+<p>登录帐号 – 员工登录SharePoint使用的帐号名称；需注意如果用户不是来自于不同AD域，则登录账号前不需要包含域名，例如：用户的登录账号为“domain\username”，在本系统中只需要登记为“username”；</p>
+</li>
+<li>
+<p>用户默认部门 – 从组织结构中选择并设定用户所属的默认部门；</p>
+</li>
+<li>
+<p>职位 – 文本输入，255字符；</p>
+</li>
+<li>
+<p>直线经理 – 选择并设定用户的直线经理；</p>
+</li>
+<li>
+<p>电子邮箱 – 设定用户的电子邮件；</p>
+</li>
+<li>
+<p>状态 – 选择用户的在职状态，新建用户默认状态为“在职”；</p>
+</li>
+<li>
+<p>照片 – 设定用户照片的链接地址；</p>
+</li>
+<li>
+<p>商务电话 – 设定用户的商务电话号码；</p>
+</li>
+<li>
+<p>手机 – 设定用户的手机号码；</p>
+</li>
+<li>
+<p>即时信息地址 – 设定用户的即时信息地址；</p>
+</li>
+<li>
+<p>博客 – 设定用户的博客地址；</p>
+</li>
+<li>
+<p>备注 – 设定用户的个人简介或其他相关的备注信息。</p>
+</li>
+</ul>
+<p><strong>删除用户</strong></p>
+<p>从用户列表中选择用户并点击<code>删除</code>按钮，确认后可将当前选择的用户删除。</p>
+<p><strong>所属部门设定</strong></p>
+<p>从用户列表中选择用户并点击<code>所属部门</code>按钮，可编辑当前所选择用户的所属部门。从组织结构中选择部门，并点击<code>添加</code>按钮，可以添加用户所属部门。选择用户所属部门并点击<code>删除</code>按钮，可以移除用户所属部门。用户的默认所属部门在这个页面中不能修改，只能在用户信息编辑中修改。</p>
+<p><center><img src="images/SSOrgChart16.png" alt="用户所属部门" title="用户所属部门"></center></p>
+<p><strong>所属角色成员管理</strong></p>
+<p>选择用户后点击<code>角色成员</code>按钮，可以对该用户所属的“公司/部门-角色-用户”关系进行管理。从左侧树状结构中选择已经存在的““公司/部门-角色”关系并点击<code>添加</code>按钮。从右侧列表中选择当前用户所属的角色并点击<code>删除</code>按钮。</p>
+<p><center><img src="images/SSOrgChart17.png" alt="用户角色管理" title="用户角色管理"></center></p>
+<p align=right><a href="#Top">Top</a></p>
+<hr />
+<p><center>上海水杉网络科技有限公司 &copy; 版权所有</center></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->
