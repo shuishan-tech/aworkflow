@@ -1,3 +1,5 @@
+<font size="8"><a name="Top"></a>水杉工作流系统管理手册</font>
+
 #工作流门户#
 
 工作流门户是所有工作流用户登录系统并进行流程审批、单据填写、提交和查询的门户站点。
@@ -77,6 +79,8 @@
 		
 	如果某个单据列表同时对应多个流程，不同流程列表希望显示的字段不同，则为希望展示特别字段的流程创建专门的SSListDataView视图，并在视图名称后增加“\_工作流类型ID”；例如：SSListDataView\_14，对应工作流类型ID=14的流程列表的展示。
 
+<p align=right><a href="#Top">Top</a></p>
+
 #工作流通知#
 
 水杉工作流平台以电子邮件和短信两种形式发送工作流审批通知，本章介绍这两种通知方式的设置方法。
@@ -103,10 +107,54 @@
 * 答复地址
 * 字符集 - 65001 (Unicode UTF-8)
 
-<center>![管理中心传出电子邮件设置](images/SSMgmt6.png)</center>
+<center>![传出电子邮件设置](images/SSMgmt6.png)</center>
 
 ##短信提醒##
 
 短信服务器参数在『SSF_Parameters』列表中设置，参数名称为：SMSAddress。设置的服务器地址必须包含usercode和content两个Url参数，例如：<font color="blue">http://10.0.0.1:8080/sendmsg/sendMsg?usercode={0}&content={1}</font>
 
 <center>![短信服务器参数](images/SSMgmt8.png)</center>
+
+<p align=right><a href="#Top">Top</a></p>
+
+#电子邮件审批#
+
+**【第一步】**在SharePoint服务器场中安装SharePoint管理中心的服务器上启用并安装SMTP服务。
+
+**【第二步】**在SharePoint管理中心配置传入电子邮件设置：
+
+* “是否为此服务器上的网站启用电子邮件接收功能?”，选择“是”；
+* “设置模式”，选择“自动”；
+* “电子邮件服务器显示地址”，配置为“servername.domain.com”，其中servername代表SharePoint服务器名称，domain.com代表SharePoint服务器所在域名；
+* 其他设置均选择原默认值，点击『确定』按钮保存设置。
+
+<center>![传入电子邮件设置](images/SSMgmt9.png)</center>
+
+**【第三步】**在SharePoint管理中心配置传出电子邮件设置：
+
+* 出站SMTP服务器：可以发送电子邮件的SMTP服务器；
+* 发件人地址：SharePoint发送通知邮件给用户时使用的帐号；
+* 答复地址：用户收到通知邮件时，通知邮件中的回复地址，地址中必须包含有服务器名称及上域名组成的二级域名。例如：<font color="blue">mysharepoint@n-sps2013-001.nelson.com</font> 
+* 字符集：默认值不改变。
+
+<center>![传出电子邮件设置](images/SSMgmt6.png)</center>
+
+
+**【第四步】**在安装水杉工作流的SharePoint网站集中进入『网站设置』页面，选择“水杉工作流平台2013/电子邮件审批设置”链接，进行下列设置：
+
+* “启用电子邮件审批”，选择复选框；
+* “传入电子邮件地址”，在传出电子邮件配置的“答复地址”；
+* 同意、拒绝、委派关键字设定，例如：“同意”，“拒绝”，“委派”分别对应上述三个操作。
+* 提示邮件模板：电子邮件审批通过时发送的提醒邮件模板；
+* 错误邮件模板：电子邮件审批未通过时发送的提醒邮件模板；
+* 确认后保存。
+
+<center>![电子邮件审批设置](images/SSMgmt10.png)</center>
+
+确保SharePoint服务器上的SMTP服务器已经正确安装并启动，发起流程进行测试。
+
+
+<p align=right><a href="#Top">Top</a></p>
+
+---
+<center>上海水杉网络科技有限公司 &copy; 版权所有</center>
